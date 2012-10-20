@@ -27,10 +27,10 @@ end
 
 group :test do
   gem 'capybara', '1.1.2'               #I_DON'T_KNOW_YET dsl for something, can't recall... having to do w/tests
-  gem 'factory_girl_rails', '4.1.0'     #I_DON'T_KNOW_WELL_YET, shown in lesson 6, co github
+  gem 'factory_girl_rails', '4.1.0'     #To create test data/objects for use in RSPEC
   gem 'cucumber-rails', '1.2.1', :require => false  #I_DON'T_KNOW_YET
   gem 'database_cleaner', '0.7.0'       #I_DON'T_KNOW_YET
-  # gem 'launchy', '2.1.0'              #I_DON'T_KNOW_YET, LESSON 7 I THINK
+  gem 'launchy', '2.1.0'              #I_DON'T_KNOW_YET, LESSON 7 I THINK
   # gem 'rb-fsevent', '0.9.1', :require => false  #I_DON'T_KNOW_YET
   gem 'growl', '1.0.3'                  #I_DON'T_REMEMBER ; check railstutorial, similar to notification on my blog? 
 end
