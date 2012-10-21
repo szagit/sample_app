@@ -4,9 +4,18 @@ class SessionsController < ApplicationController
 	end
 
 	def create
+		user = User.find_by_email(params[:session][:email])
+		if user && user.authenticate(params[:session][:password])
+			sign_in user #wtf does this mean? OK GOOD, next step is to build a working sign_in method LOL.  in SessionsHelper! and include in Application Controller
+			redirect_to user 
+		else
+		flash.now[:error] = "Invalid email password combination"
+		render 'new'
+		end
 	end
 
 	def destroy
+		sign_out
+		redirect_to root_path
 	end	
-
 end

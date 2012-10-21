@@ -26,7 +26,7 @@ group :assets do
 end
 
 group :test do
-  gem 'capybara', '1.1.2'               #I_DON'T_KNOW_YET dsl for something, can't recall... having to do w/tests
+  gem 'capybara', '1.1.2'               #Used to help with RSPEC testing, gives ghost user like abilitity to "fill in" and "click buttons" etc. 
   gem 'factory_girl_rails', '4.1.0'     #To create test data/objects for use in RSPEC
   gem 'cucumber-rails', '1.2.1', :require => false  #I_DON'T_KNOW_YET
   gem 'database_cleaner', '0.7.0'       #I_DON'T_KNOW_YET
