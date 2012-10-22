@@ -3,8 +3,8 @@ source 'https://rubygems.org'           #comments updated 10/18
 gem 'rails', '3.2.8'                    #RAILS, duh
 gem 'bootstrap-sass', '2.0.4'           #Bootstrap sass for css design and layout
 gem 'bcrypt-ruby', '3.0.1'              #runs background for authorization method and helper, FOR has_secure_password method
-gem 'faker', '1.0.1'                    #I_DON'T_KNOW_YET
-gem 'will_paginate', '3.0.3'            #likely for page numbers at the bottom? 
+gem 'faker', '1.0.1'                    #I_DON'T_KNOW_YET -> used in the rake file to create FAKE names for users
+gem 'will_paginate', '3.0.3'            #likely for page numbers at the bottom?  - exactly! pagination above and below user index view
 gem 'bootstrap-will_paginate', '0.0.6'  #somehow a bridge for page numbers at the bottom and bootstrap? 
 gem 'jquery-rails', '2.0.2'             #to use jquery?  although have not seen when this comes into play
                                         #is it always running in the background?  Can check on github
